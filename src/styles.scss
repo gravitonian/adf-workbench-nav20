@@ -25,6 +25,8 @@ body, html {
   line-height: mat-line-height($alfresco-typography, body-1);
 }
 
-body {
-  overflow: auto;
+/* The side navigation/menu width */
+mat-sidenav {
+  width: 250px;
 }
+
