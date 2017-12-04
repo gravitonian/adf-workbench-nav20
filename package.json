@@ -31,6 +31,7 @@
     "@alfresco/adf-insights": "2.0.1",
     "@alfresco/adf-process-services": "2.0.0",
     "chart.js": "2.5.0",
+    "classlist.js": "1.1.20150312",
     "core-js": "2.4.1",
     "custom-event-polyfill": "0.3.0",
     "hammerjs": "2.0.8",
