@@ -25,6 +25,11 @@ body, html {
   line-height: mat-line-height($alfresco-typography, body-1);
 }
 
+/* Make sure scrollbar is available in overflow scenario */
+body {
+  overflow: auto;
+}
+
 /* The side navigation/menu width */
 mat-sidenav {
   width: 250px;
