@@ -3,7 +3,7 @@
     <mat-toolbar>
       <img src="../assets/images/alfresco-logo.png" style="height:60%">
       <span fxFlex></span>
-      {{appName}}
+      {{ appName }}
     </mat-toolbar>
     <mat-nav-list>
       <a *ngFor="let menuItem of mainMenuItems"
@@ -12,8 +12,8 @@
          [style.position]="'relative'"
          routerLinkActive="selected"
          [routerLink]="[menuItem.path]">
-        <mat-icon mat-list-icon *ngIf="menuItem.icon">{{menuItem.icon}}</mat-icon>
-        <span>{{menuItem.title}}</span>
+        <mat-icon mat-list-icon *ngIf="menuItem.icon">{{ menuItem.icon }}</mat-icon>
+        <span>{{ menuItem.title }}</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>
@@ -22,8 +22,9 @@
       <mat-icon *ngIf="mainSideNav.opened">chevron_left</mat-icon>
       <mat-icon *ngIf="!mainSideNav.opened">menu</mat-icon>
     </button>
-    {{(activeMenuItem$ | async)?.title}}
+    {{ (activeMenuItem$ | async)?.title }}
     <span fxFlex></span>
+    {{ getCurrentUser() }}
     <button mat-icon-button [matMenuTriggerFor]="dropdownMenu">
       <mat-icon>more_vert</mat-icon>
     </button>

@@ -25,6 +25,10 @@ export class AppComponent {
     });
   }
 
+  getCurrentUser() {
+    return this.authService.getEcmUsername();
+  }
+
   onLogout(event) {
     event.preventDefault();
 
