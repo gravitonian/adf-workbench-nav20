@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "adf-workbench20"
+    "name": "adf-workbench-nav20"
   },
   "apps": [
     {
@@ -11,13 +11,41 @@
         "assets",
         "favicon.ico",
         "app.config.json",
-        { "glob": "**/*", "input": "../resources", "output": "./resources" },
-        { "glob": "**/*", "input": "../node_modules/@alfresco/adf-core/prebuilt-themes", "output": "./assets/prebuilt-themes" },
-        { "glob": "**/*", "input": "../node_modules/@alfresco/adf-core/bundles/assets",  "output": "./assets/" },
-        { "glob": "**/*", "input": "../node_modules/@alfresco/adf-insights/bundles/assets", "output": "./assets/" },
-        { "glob": "**/*", "input": "../node_modules/@alfresco/adf-process-services/bundles/assets", "output": "./assets/" },
-        { "glob": "**/*", "input": "../node_modules/@alfresco/adf-content-services/bundles/assets", "output": "./assets/" },
-        { "glob": "pdf.worker.js", "input": "../node_modules/pdfjs-dist/build", "output": "./" }
+        {
+          "glob": "**/*",
+          "input": "../resources",
+          "output": "./resources"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/@alfresco/adf-core/prebuilt-themes",
+          "output": "./assets/prebuilt-themes"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/@alfresco/adf-core/bundles/assets",
+          "output": "./assets/"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/@alfresco/adf-insights/bundles/assets",
+          "output": "./assets/"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/@alfresco/adf-process-services/bundles/assets",
+          "output": "./assets/"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/@alfresco/adf-content-services/bundles/assets",
+          "output": "./assets/"
+        },
+        {
+          "glob": "pdf.worker.js",
+          "input": "../node_modules/pdfjs-dist/build",
+          "output": "./"
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
