@@ -5,18 +5,14 @@ import { AppLoginRoutingModule } from './app-login-routing.module';
 import { AppLoginPageComponent } from './app-login-page/app-login-page.component';
 
 import { AppCommonModule } from '../app-common/app-common.module';
-import { LoginModule } from '@alfresco/adf-core';
 
 @NgModule({
   imports: [
     CommonModule,
     AppLoginRoutingModule,
 
-    /* Common App imports (Angular Core and Material, ADF Core */
-    AppCommonModule,
-
-    /* ADF libs specific to this module */
-    LoginModule
+    /* Common App imports (Angular Core and Material, ADF Core, Content, and Process */
+    AppCommonModule
   ],
   declarations: [AppLoginPageComponent]
 })
